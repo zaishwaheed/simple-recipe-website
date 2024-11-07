@@ -1,0 +1,116 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-height: 100vw;
+  background-image: url('images/dish-8723519_1280.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow:hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+ul {
+  padding: 2px;
+  text-align: center;
+  font-size: 1.15vw;
+}
+
+li {
+  display: inline-flex;
+  padding: 5px 10px;
+  border: 1px double rgba(0, 0, 0, 0.712);
+  box-shadow: 3px 2px 5px #212121;
+  background-color: #d35400;
+  border-radius: 50px;
+  margin: 10px; 
+  color: #212121;
+}
+
+li:hover {
+  text-decoration: underline;
+  font-size: 1.2vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-size: 1vw;
+}
+
+.header, .footer {
+  background-color: #333333a8;
+
+}
+
+
+.main-content {
+  flex: 0.35;
+}
+
+.button {
+  display: inline-flexbox;
+  background-color: #d35400;
+  color: #212121;
+  padding: 7px;
+  border: 1px solid #212121;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.hero, .cuisines {
+  background-color: #2121216e;
+  text-align: center;
+  box-shadow: 3px 2px 5px #212121;
+}
+
+.hero {
+  margin: 90px auto;
+  width: 60%;
+  padding: 105px;
+
+}
+
+.cuisines {
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  margin: 2px auto;
+}
+
+h1, p {
+  color: #d35400;
+}
+
+h1 {
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 15px auto;
+  text-shadow: 2px 4px 5px #212121
+}
+
+p {
+  font-size: 1.25vw;
+  margin: 10px auto;
+}
